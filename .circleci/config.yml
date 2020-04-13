@@ -10,7 +10,8 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-            - run: ls -a
+            - run: cat package.json
+            - run: npm run build
 workflows:
     build-and-test:
       jobs:
