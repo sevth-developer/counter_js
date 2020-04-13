@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counter_js：简易网页计数器</title>
+    <!-- 其他script css -->
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+</head>
+<body class="mdui-theme-layout-dark">
+<header class="mdui-toolbar">
+    <img class="mdui-img-rounded mdui-m-a-1 mdui-m-l-4" src="https://sevth.com/img/logo.png" alt="" width="81px">
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="https://github.com/sevth-developer/counter_js" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white mdui-m-a-1 mdui-m-r-4" mdui-tooltip="{content: '查看 Github'}">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+	c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+	c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+	c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+	c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+	c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
+      </svg>
+    </a>
+</header>
+
+<div class="mdui-valign" style="height: calc(100vh - 56px - 38px)">
+    <div class="mdui-container">
+
+        <div class="mdui-typo">
+            <h3 class="mdui-text-center">
+                counter_js：采用lumen开发后端的简易网页计数器 <br>
+                <small>简易,快捷,高效</small>
+            </h3>
+            <br><br>
+            <h5 class="mdui-text-center"> 快速使用:</h5>
+            <pre>
+            &lt;script src="https://cdn.sevth.com/website/counter_js/counter.min.js"&gt;&lt;/script&gt;
+            &lt;span&gt;本站访问人数：&lt;span id="counter-site-uv"&gt;&lt;/span&gt;站点总访问量&lt;span id="counter
+                -site-pv"&gt;&lt;/span&gt;此页面访问量：&lt;span id="counter-page-pv"&gt;&lt;/span&gt;&lt;/span&gt;</pre>
+            <button class="mdui-btn mdui-color-white mdui-center" onclick="location.href='https://github.com/sevth-developer/counter_js'">前往GitHub</button>
+        </div>
+    </div>
+</div>
+
+<footer class="mdui-container footer">
+    <span>
+        本站访问人数：<span id="counter-site-uv"></span>
+        此页面访问量：<span id="counter-page-pv"></span>
+        站点总访问量：<span id="counter-site-pv"></span>
+    </span>
+</footer>
+<!-- 使用文件引入方式一样有效 -->
+<!-- <script src="./dist/counter.min.js"></script> -->
+<script src="https://cdn.sevth.com/website/counter_js/counter.min.js"></script>
+
+</body>
+</html>
+<style>
+    footer {
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgb(218, 220, 218);
+    }
+</style>
