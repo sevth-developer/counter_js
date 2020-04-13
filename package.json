@@ -1,18 +1,18 @@
 {
-  "name": "counter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "author": "sevth",
+  "dependencies": {},
+  "description": "配合后台api使用的js计数器",
+  "devDependencies": {
+    "webpack-cli": "^3.3.11",
     "webpack": "^4.42.1"
   },
-  "devDependencies": {
-    "webpack-cli": "^3.3.11"
-  }
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "counter",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --config=./build/webpack.config.js"
+  },
+  "version": "1.0.0"
 }
