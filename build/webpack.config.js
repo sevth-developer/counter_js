@@ -7,7 +7,7 @@ module.exports = {
     target: "web",
     mode: "production",
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../dist'),
         filename: "counter.min.js"
     }
 };
