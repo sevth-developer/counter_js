@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title>counter_js：简易网页计数器</title>
     <!-- 其他script css -->
     <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
@@ -23,7 +24,7 @@
     </a>
 </header>
 
-<div class="mdui-valign" style="height: calc(100vh - 56px - 38px)">
+<div class="mdui-valign" >
     <div class="mdui-container">
 
         <div class="mdui-typo">
@@ -33,10 +34,7 @@
             </h3>
             <br><br>
             <h5 class="mdui-text-center"> 快速使用:</h5>
-            <pre>
-            &lt;script src="https://cdn.sevth.com/website/counter_js/counter.min.js"&gt;&lt;/script&gt;
-            &lt;span&gt;本站访问人数：&lt;span id="counter-site-uv"&gt;&lt;/span&gt;站点总访问量&lt;span id="counter
-                -site-pv"&gt;&lt;/span&gt;此页面访问量：&lt;span id="counter-page-pv"&gt;&lt;/span&gt;&lt;/span&gt;</pre>
+            <pre class="mdui-text-center">&lt;script src="https://cdn.sevth.com/website/counter_js/counter.min.js"&gt;&lt;/script&gt;<br>&lt;span&gt;本站访问人数：&lt;span id="counter-site-uv"&gt;&lt;/span&gt;站点总访问量&lt;span id="counter<br>-site-pv"&gt;&lt;/span&gt;此页面访问量：&lt;span id="counter-page-pv"&gt;&lt;/span&gt;&lt;/span&gt;</pre>
             <button class="mdui-btn mdui-color-white mdui-center" onclick="location.href='https://github.com/sevth-developer/counter_js'">前往GitHub</button>
         </div>
     </div>
@@ -58,7 +56,7 @@
 <style>
     footer {
         text-align: center;
-        position: fixed;
+        position: absolute;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
