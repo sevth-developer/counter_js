@@ -1,6 +1,6 @@
 # counter_js
 
-[![counter](https://cdn.sevth.com/website/2020/04/13/7d210d6eb2b90890ae3795967d57cb59.svg)](https://circleci.com/gh/sevth-developer/counter_js)[![MIT](https://cdn.sevth.com/website/2020/04/13/3a2757504750cc2bf8a72b9db7bf029f.svg)](https://github.com/sevth-developer/counter_js)
+[![counter](https://img.sevth.com/website/2020/04/13/7d210d6eb2b90890ae3795967d57cb59.svg)](https://circleci.com/gh/sevth-developer/counter_js)[![MIT](https://cdn.sevth.com/website/2020/04/13/3a2757504750cc2bf8a72b9db7bf029f.svg)](https://github.com/sevth-developer/counter_js)
 
 
 
