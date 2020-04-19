@@ -1,42 +1,38 @@
-import {GetCookie, SetCookie} from "./utils";
+import {GetUV, SetUV} from "./utils";
 import Server from "./server";
 
 /**
  * 主要实现方法
- *  1. 检测cookie是否存在
+ *  1. 检测本地存储是否存在值
  *  2. 动态加载script 执行 jsonp 回调
- *  3. 加载成功后
+ *  3. 加载成功后插入对应标签
  */
 
 async function main() {
-    // let user_check = false;
-    // if (await GetCookie) {user_check = true;}
     let server = new Server();
-    // console.log(GetCookie());
-    let funcName = await server.jsonp(GetCookie());
-    if (funcName && !GetCookie()) await SetCookie()
+    let funcName = await server.jsonp(GetUV());
+    if (funcName && !GetUV()) await SetUV()
 }
 /**
  * 浏览器兼容加载
  *
  */
-function ready() {
+function run() {
     if (document.addEventListener) {                //兼容主流浏览器
         document.addEventListener('DOMContentLoaded',
             function a() {
-            document.removeEventListener('DOMContentLoaded', a, false);
-            main().then(r => {});
-            // console.log('DOMContentLoaded')
-        }
-            // main
-        , false);
+                document.removeEventListener('DOMContentLoaded', a, false);
+                main()
+                // console.log('DOMContentLoaded')
+            }
+            , false);
     }
 
     else if (document.attachEvent) {                //兼容IE8+
         document.attachEvent('onreadystatechange', function a() {
             if (document.readyState === 'complete') {
                 document.detachEvent('onreadystatechange', a);
-                main().then(r => {});
+                main()
                 // console.log('onreadystatechange')
             }
         });
@@ -47,14 +43,14 @@ function ready() {
             } catch (e) {
                 return setTimeout(ready, 50);
             }
-            main().then(r => {});
+            main()
             // console.log('doScroll')
         }
     }
 }
 
 export default {
-    ready
+    run
 }
 
 

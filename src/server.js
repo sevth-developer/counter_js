@@ -1,18 +1,14 @@
 class Server {
     async jsonp($add) {
         let script = document.createElement('script');
-        let funcName = 'counter_' + parseInt((Math.random() * 1000000).toString(), 10);
+        let funcName = 'counter_' + Math.floor((Math.random() * 1000000));
         window[funcName] = function (data) {
-                const dom_uv = document.getElementById('counter-site-uv');
-                const dom_page_pv = document.getElementById('counter-page-pv');
-                const dom_site_pv = document.getElementById('counter-site-pv');
-                // if (!uv){
-                //     return 0;
-                // }
-                // console.log(dom_uv);
-                try{dom_uv.innerHTML = data.site_uv;}catch (e) {}
-                try{dom_page_pv.innerHTML = data.page_pv;}catch (e) {}
-                try{dom_site_pv.innerHTML = data.site_pv;}catch (e) {}
+            const dom_uv = document.getElementById('counter-site-uv');
+            const dom_page_pv = document.getElementById('counter-page-pv');
+            const dom_site_pv = document.getElementById('counter-site-pv');
+            try{dom_uv.innerHTML = data.site_uv;}catch (e) {}
+            try{dom_page_pv.innerHTML = data.page_pv;}catch (e) {}
+            try{dom_site_pv.innerHTML = data.site_pv;}catch (e) {}
         };
         let url = "https://api.sevth.com/v1/counter?callback=" + funcName;
         if (!$add) {
