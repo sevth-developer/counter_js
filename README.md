@@ -4,7 +4,7 @@
 
 
 
-使用 humen 作为后端开发的简易网页计数器，用于支持 `Hexo` 博客的 `uv`、`pv`统计。
+使用 Lumen 作为后端开发的简易网页计数器，用于支持 `Hexo` 博客的 `uv`、`pv`统计。
 
 
 
@@ -121,6 +121,5 @@ version:1.0		//版本号
 ## 支持
 
 - [Issues](https://github.com/sevth-developer/counter_js/issues)
-
 - [sevth的小破站](https://sevth.com)
 - [sevthdev@gmail.com](mailto:sevthdev@gmail.com)
